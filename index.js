@@ -40,3 +40,13 @@ const initApp = () => {
          listProductHTML.appendChild(newProduct);
     });
 }
+// 在 index.js 文件中添加以下代码来向页面中添加更多内容
+const appDiv = document.getElementById('app');
+const temporaryContentDiv = document.getElementById('temporaryContent');
+
+// 创建一个新的 div 元素
+const newDiv = document.createElement('div');
+newDiv.textContent = '更多内容';
+
+// 将新的 div 元素添加到页面中
+appDiv.appendChild(newDiv);
